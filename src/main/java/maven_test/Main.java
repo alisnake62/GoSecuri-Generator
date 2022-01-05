@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-        String url_staff = "https://raw.githubusercontent.com/alisnake62/GoSecuri-repoGenerator/master/data_client/staff.txt";
+        String url_staff = "https://raw.githubusercontent.com/alisnake62/GoSecuri-repoGenerator/master/staff.txt";
         ArrayList<String> list = HttpGet.HttpGet(url_staff);
         System.out.println(list);
         String new_index_html = read_index_html(list);
@@ -39,7 +39,7 @@ public class Main {
     }
 
     private static void write_in_new_index_html(String new_index_html) throws IOException {
-        File file = new File("src/main/java/html/new_index.html");
+        File file = new File("/var/www/html/index.html");
         FileWriter fw = new FileWriter(file.getAbsoluteFile());
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write(new_index_html);
