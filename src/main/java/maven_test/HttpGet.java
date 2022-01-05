@@ -11,11 +11,10 @@ import java.util.ArrayList;
 public class HttpGet {
 
 	
-	public static ArrayList<String> HttpGet() {
-        try {
-
+	public static ArrayList<String> HttpGet(String file_name) {
+		try {
             //Get Response
-            BufferedReader rd = new BufferedReader(new FileReader("/var/lib/jenkins/workspace/GoSecuti_html_maj/staff.txt"));
+            BufferedReader rd = new BufferedReader(new FileReader("/var/lib/jenkins/workspace/GoSecuti_html_maj/all_txt/" + file_name));
             String line;
             //Read line by line
             ArrayList<String> list = new ArrayList();

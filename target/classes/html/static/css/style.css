@@ -1,0 +1,118 @@
+.navbar {
+    background-color: #659224 !important;
+}
+
+@font-face {
+    font-family: "Roboto";
+}
+
+body {
+    font-family: Roboto;
+    background-color: rgb(53, 53, 53);
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.tableauID {
+    background-color: #edeeee;
+    color: black;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-right: 3%;
+    border-radius: 2%;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 94%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 125%;
+    background-color: #379EC1;
+    color: white;
+}
+
+.nav-link {
+    margin-left: 20% !important;
+    font-size: 150%;
+}
+
+.imgProfil {
+    width: 40%;
+    position: relative;
+    float: right;
+    padding-right: 15%;
+}
+
+.Name {
+    padding-top: 5%;
+    padding-left: 15%;
+}
+
+.check {
+    padding-left: 25%;
+    padding-top: 20%;
+}
+
+@media screen and (max-width: 900px) {
+    article {
+        padding: 1rem 3rem;
+    }
+}
+
+.presentation {
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.presentation h1,
+.presentation p {
+    text-align: center;
+}
+
+.presentation p {
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.presentation h1 {
+    padding-top: 0.5%;
+}
+
+.navError {
+    width: 200%;
+}
+
+.msgError h1,
+.msgError p {
+    text-align: center;
+}
+
+.msgError h1 {
+    padding-bottom: 2%;
+    padding-top: 17%;
+}
