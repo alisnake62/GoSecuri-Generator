@@ -12,7 +12,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
         String url_staff = "https://raw.githubusercontent.com/alisnake62/GoSecuri-repoGenerator/master/staff.txt";
-        ArrayList<String> list = HttpGet.HttpGet(url_staff);
+        ArrayList<String> list = HttpGet.HttpGet();
         System.out.println(list);
         String new_index_html = read_index_html(list);
         System.out.println("index" + new_index_html );
@@ -20,7 +20,7 @@ public class Main {
     }
 
     private static String read_index_html(ArrayList<String> list) throws IOException {
-        BufferedReader rd = new BufferedReader(new FileReader("src/main/java/html/index.html"));
+        BufferedReader rd = new BufferedReader(new FileReader("/var/lib/jenkins/workspace/GoSecuri_package/src/main/java/html/index.html"));
         String line;
         String index_html = "";
         while ((line = rd.readLine()) != null) {

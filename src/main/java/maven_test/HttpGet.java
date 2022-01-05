@@ -1,6 +1,7 @@
 package maven_test;
 
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -10,13 +11,11 @@ import java.util.ArrayList;
 public class HttpGet {
 
 	
-	public static ArrayList<String> HttpGet(String url_request) {
+	public static ArrayList<String> HttpGet() {
         try {
-            //Create connection
-            URL url = new URL(url_request);
-            URLConnection url_connection = url.openConnection();
+
             //Get Response
-            BufferedReader rd = new BufferedReader(new InputStreamReader(url_connection.getInputStream()));
+            BufferedReader rd = new BufferedReader(new FileReader("/var/lib/jenkins/workspace/GoSecuti_html_maj/staff.txt"));
             String line;
             //Read line by line
             ArrayList<String> list = new ArrayList();
