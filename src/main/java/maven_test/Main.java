@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
+		//test
         String url_staff = "https://raw.githubusercontent.com/alisnake62/GoSecuri-repoGenerator/master/staff.txt";
         ArrayList<String> list = HttpGet.HttpGet();
         System.out.println(list);
