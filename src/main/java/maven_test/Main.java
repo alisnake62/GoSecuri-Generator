@@ -86,9 +86,6 @@ public class Main {
         String row_materiel = "<div>var_materiel</div>";
         String fiche_materiel = "";
         String row_mat = row_materiel;
-
-	
-	//row_mat = row_mat.replace("var_materiel", "<br>" + user_staff.get(4) + String.valueOf(user_staff.size()));
 	    
 	for (int i = 4; i < user_staff.size(); i++){
 		row_mat += "<br>" + user_staff.get(i);
