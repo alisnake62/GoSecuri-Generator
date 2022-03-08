@@ -88,7 +88,7 @@ public class Main {
         String row_mat = row_materiel;
 
 	
-        row_mat = row_mat.replace("var_materiel", "<br>" + user_staff.get(4) + String.valueOf(user_staff.size());
+        row_mat = row_mat.replace("var_materiel", "<br>" + user_staff.get(4) + String.valueOf(user_staff.size()));
         fiche_materiel = fiche_materiel + row_mat;
 
         String new_fiche_html = index_html.
